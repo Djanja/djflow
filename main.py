@@ -6,7 +6,8 @@ from recommender import Recommender
 def main():
     sp = get_spotify_client()
 
-    playlist_url = input("Вставьте ссылку на ваш плейлист: ")
+    # playlist_url = input("Вставьте ссылку на ваш плейлист: ")
+    playlist_url = "https://open.spotify.com/playlist/5vIzAcAdSk6vlZwehKAZoS?si=LSQPGEFGSx2qw172mY_Qqg"
 
     analyzer = PlaylistAnalyzer(sp)
     data = analyzer.analyze(playlist_url)
